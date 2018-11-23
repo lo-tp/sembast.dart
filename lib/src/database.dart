@@ -81,4 +81,9 @@ abstract class Database extends DatabaseExecutor {
   /// Close the database
   ///
   Future close();
+
+  ///
+  /// Get a store reference
+  ///
+  StoreRef getStoreRef(String storeName);
 }

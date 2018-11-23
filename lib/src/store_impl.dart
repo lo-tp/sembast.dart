@@ -9,6 +9,19 @@ import 'package:sembast/src/utils.dart';
 
 import 'database_impl.dart';
 
+class SembastStoreRef implements StoreRef {
+  final SembastDatabase database;
+  final String name;
+
+  SembastStoreRef(this.database, this.name);
+
+  @override
+  RecordRef getRecordRef(key) {
+    // TODO: implement getRecordRef
+    return null;
+  }
+}
+
 class SembastStore implements Store {
   final SembastDatabase database;
   @override

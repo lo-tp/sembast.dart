@@ -5,6 +5,15 @@ import 'package:sembast/src/sembast_impl.dart';
 import 'package:sembast/src/database.dart';
 import 'package:sembast/src/utils.dart';
 
+class SembastRecordRef implements RecordRef {
+  @override
+  final StoreRef storeRef;
+  @override
+  final key;
+
+  SembastRecordRef(this.storeRef, this.key);
+}
+
 class SembastRecord implements Record {
   @override
   dynamic key;

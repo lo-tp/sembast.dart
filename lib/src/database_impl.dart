@@ -675,6 +675,11 @@ class SembastDatabase extends Object
 
   @override
   Future clear() => mainStore.clear();
+
+  @override
+  StoreRef getStoreRef(String storeName) {
+    return SembastStoreRef(this, storeName);
+  }
 }
 
 class DatabaseExportStat {

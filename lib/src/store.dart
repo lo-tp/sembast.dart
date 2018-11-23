@@ -92,3 +92,13 @@ abstract class Store extends StoreExecutor {
   ///
   String get name;
 }
+
+/// New API
+abstract class StoreRef {
+  RecordRef getRecordRef(dynamic key);
+}
+
+abstract class RecordRef {
+  StoreRef get storeRef;
+  dynamic get key;
+}
